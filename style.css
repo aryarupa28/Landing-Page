@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior:inherit;
+}
+body{
+    min-height: 100vh;
+    background:black;
+    color: white;
+}
+#header{
+    color: white;
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.navbar{
+    display:flex;
+}
+.navbar a{
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition:all .50s ease ;
+}
+.navbar a:hover{
+    color:#ff004f
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user i{
+    color:#ff004f;
+    font-size: 25px;
+    margin-right: 7px;
+}
+.main a:hover{
+    color:#ff004f
+}
+.bx{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+#HomeInfo{
+    color: #ff004f;
+    padding: 298px;
+    text-align: center;
+}
+#AboutInfo{
+    color: #ff004f;
+    padding: 298px;
+    text-align: center;
+}
+#ServiceInfo{
+    color: #ff004f;
+    padding: 298px;
+    text-align: center;
+}
+#Contact{
+    color: #ff004f;
+    padding: 298px;
+    text-align: center;
+}
+#signin{
+    color: #ff004f;
+    padding: 298px;
+    text-align: center;
+}
+#register{
+    color: #ff004f;
+    padding: 298px;
+    text-align: center;
+}
+@media (max-width:1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+      .navbar a{
+        padding: 5px 0;
+        margin:0 20px ;
+    }
+}
+@media (max-width:1090px){
+    .bx{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background-color: #ff004f;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color:black;
+        transform:translateY(5px)
+    }
+    .navbar.open{
+        right:2%
+    }
+}
